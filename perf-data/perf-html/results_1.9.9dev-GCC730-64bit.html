@@ -4,345 +4,347 @@
 <div align="center"><h2>Results for: 1.9.9dev-GCC730-64bit</h2></div><hr> <br><br>
 <div align="center"><table border="1">
 <tr> <td align="center"><b>Test description</b></td> <td align="center"><b>Execution time</b></td><td align="center"><b>Execution rate (Hz)</b></td> </tr>
-<tr> <td>icp-slam (match points): Run with sample dataset</td> <td align="right">942.31 us</td> <td align="right">1.06 KHz</td>  </tr>
-<tr> <td>icp-slam (match grid): Run with sample dataset</td> <td align="right">1.55 ms</td> <td align="right">644.34  Hz</td>  </tr>
-<tr> <td>poses: CPose3D (+) CPose3D</td> <td align="right">22.97 ns</td> <td align="right">43.54 MHz</td>  </tr>
-<tr> <td>poses: CPose3D.composeFrom()</td> <td align="right">19.01 ns</td> <td align="right">52.60 MHz</td>  </tr>
-<tr> <td>poses: CPose3D (+) CPoint3D</td> <td align="right">4.44 ns</td> <td align="right">225.02 MHz</td>  </tr>
-<tr> <td>poses: CPose3D.composePoint()</td> <td align="right">9.02 ns</td> <td align="right">110.89 MHz</td>  </tr>
-<tr> <td>poses: CPose3D.composePoint()+Jacobs</td> <td align="right">158.79 ns</td> <td align="right">6.30 MHz</td>  </tr>
-<tr> <td>poses: CPoint3D (-) CPose3D</td> <td align="right">12.07 ns</td> <td align="right">82.82 MHz</td>  </tr>
-<tr> <td>poses: CPose3D.inverseComposePoint()</td> <td align="right">19.86 ns</td> <td align="right">50.35 MHz</td>  </tr>
-<tr> <td>poses: CPose2D (+) CPose2D</td> <td align="right">19.07 ns</td> <td align="right">52.43 MHz</td>  </tr>
-<tr> <td>poses: CPose2D.composeFrom()</td> <td align="right">15.62 ns</td> <td align="right">64.04 MHz</td>  </tr>
-<tr> <td>poses: CPose2D (+) CPoint2D</td> <td align="right">11.71 ns</td> <td align="right">85.37 MHz</td>  </tr>
-<tr> <td>poses: CPose2D.composePoint()</td> <td align="right">9.44 ns</td> <td align="right">105.91 MHz</td>  </tr>
-<tr> <td>poses: CPose3DQuat (+) CPose3DQuat</td> <td align="right">23.64 ns</td> <td align="right">42.30 MHz</td>  </tr>
-<tr> <td>poses: CPose3DQuat.composeFrom()</td> <td align="right">22.75 ns</td> <td align="right">43.96 MHz</td>  </tr>
-<tr> <td>poses: CPose3DQuat (+) CPoint3D</td> <td align="right">14.07 ns</td> <td align="right">71.08 MHz</td>  </tr>
-<tr> <td>poses: CPose3DQuat.composePoint()</td> <td align="right">13.06 ns</td> <td align="right">76.59 MHz</td>  </tr>
-<tr> <td>poses: CPose3DQuat.invcomposePoint()</td> <td align="right">11.81 ns</td> <td align="right">84.67 MHz</td>  </tr>
-<tr> <td>poses: Conv CPose3DQuat <- CPose3D</td> <td align="right">10.33 ns</td> <td align="right">96.76 MHz</td>  </tr>
-<tr> <td>poses: Conv CPose3D -> CPose3DQuat</td> <td align="right">110.21 ns</td> <td align="right">9.07 MHz</td>  </tr>
-<tr> <td>poses: Conv CPose3DQuat Gauss <- CPose3D Gauss (DEF)</td> <td align="right">537.00 ns</td> <td align="right">1.86 MHz</td>  </tr>
-<tr> <td>poses: Conv CPose3DQuat Gauss <- CPose3D Gauss (Lin)</td> <td align="right">533.00 ns</td> <td align="right">1.88 MHz</td>  </tr>
-<tr> <td>poses: Conv CPose3DQuat Gauss <- CPose3D Gauss (SUT)</td> <td align="right">7.36 us</td> <td align="right">135.94 KHz</td>  </tr>
-<tr> <td>poses: Conv CPose3D Gauss <- CPose3DQuat Gauss (DEF)</td> <td align="right">354.40 ns</td> <td align="right">2.82 MHz</td>  </tr>
-<tr> <td>poses: Conv CPose3D Gauss <- CPose3DQuat Gauss (Lin)</td> <td align="right">363.60 ns</td> <td align="right">2.75 MHz</td>  </tr>
-<tr> <td>poses: Conv CPose3D Gauss <- CPose3DQuat Gauss (SUT)</td> <td align="right">6.11 us</td> <td align="right">163.60 KHz</td>  </tr>
-<tr> <td>CPose3DInterpolator: CPose3D insert pose at end</td> <td align="right">261.05 ns</td> <td align="right">3.83 MHz</td>  </tr>
-<tr> <td>CPose3DInterpolator: CPose3D insert pose random</td> <td align="right">246.07 ns</td> <td align="right">4.06 MHz</td>  </tr>
-<tr> <td>CPose3DInterpolator: CPose3D query</td> <td align="right">570.27 ns</td> <td align="right">1.75 MHz</td>  </tr>
-<tr> <td>CPose3DInterpolator: TPose3D insert pose at end</td> <td align="right">233.64 ns</td> <td align="right">4.28 MHz</td>  </tr>
-<tr> <td>CPose3DInterpolator: TPose3D insert pose random</td> <td align="right">241.19 ns</td> <td align="right">4.15 MHz</td>  </tr>
-<tr> <td>CPose3DInterpolator: TPose3D query</td> <td align="right">476.16 ns</td> <td align="right">2.10 MHz</td>  </tr>
-<tr> <td>CPose2DInterpolator: TPose2D insert pose at end</td> <td align="right">202.75 ns</td> <td align="right">4.93 MHz</td>  </tr>
-<tr> <td>CPose2DInterpolator: TPose2D insert pose random</td> <td align="right">205.64 ns</td> <td align="right">4.86 MHz</td>  </tr>
-<tr> <td>CPose2DInterpolator: TPose2D query</td> <td align="right">216.72 ns</td> <td align="right">4.61 MHz</td>  </tr>
-<tr> <td>matrix: unit, dyn[float], 3x3</td> <td align="right">24.95 ns</td> <td align="right">40.08 MHz</td>  </tr>
-<tr> <td>matrix: unit, dyn[double], 3x3</td> <td align="right">24.42 ns</td> <td align="right">40.94 MHz</td>  </tr>
-<tr> <td>matrix: unit, dyn[float], 6x6</td> <td align="right">56.91 ns</td> <td align="right">17.57 MHz</td>  </tr>
-<tr> <td>matrix: unit, dyn[double], 6x6</td> <td align="right">47.17 ns</td> <td align="right">21.20 MHz</td>  </tr>
+<tr> <td>icp-slam (match points): Run with sample dataset</td> <td align="right">902.92 us</td> <td align="right">1.11 KHz</td>  </tr>
+<tr> <td>icp-slam (match grid): Run with sample dataset</td> <td align="right">1.30 ms</td> <td align="right">772.09  Hz</td>  </tr>
+<tr> <td>poses: CPose3D (+) CPose3D</td> <td align="right">17.52 ns</td> <td align="right">57.08 MHz</td>  </tr>
+<tr> <td>poses: CPose3D.composeFrom()</td> <td align="right">16.58 ns</td> <td align="right">60.31 MHz</td>  </tr>
+<tr> <td>poses: CPose3D (+) CPoint3D</td> <td align="right">4.77 ns</td> <td align="right">209.56 MHz</td>  </tr>
+<tr> <td>poses: CPose3D.composePoint()</td> <td align="right">5.91 ns</td> <td align="right">169.26 MHz</td>  </tr>
+<tr> <td>poses: CPose3D.composePoint()+Jacobs</td> <td align="right">113.42 ns</td> <td align="right">8.82 MHz</td>  </tr>
+<tr> <td>poses: CPoint3D (-) CPose3D</td> <td align="right">8.24 ns</td> <td align="right">121.36 MHz</td>  </tr>
+<tr> <td>poses: CPose3D.inverseComposePoint()</td> <td align="right">14.52 ns</td> <td align="right">68.89 MHz</td>  </tr>
+<tr> <td>poses: CPose2D (+) CPose2D</td> <td align="right">17.57 ns</td> <td align="right">56.93 MHz</td>  </tr>
+<tr> <td>poses: CPose2D.composeFrom()</td> <td align="right">13.86 ns</td> <td align="right">72.17 MHz</td>  </tr>
+<tr> <td>poses: CPose2D (+) CPoint2D</td> <td align="right">7.64 ns</td> <td align="right">130.86 MHz</td>  </tr>
+<tr> <td>poses: CPose2D.composePoint()</td> <td align="right">5.95 ns</td> <td align="right">167.95 MHz</td>  </tr>
+<tr> <td>poses: CPose3DQuat (+) CPose3DQuat</td> <td align="right">18.36 ns</td> <td align="right">54.47 MHz</td>  </tr>
+<tr> <td>poses: CPose3DQuat.composeFrom()</td> <td align="right">19.07 ns</td> <td align="right">52.44 MHz</td>  </tr>
+<tr> <td>poses: CPose3DQuat (+) CPoint3D</td> <td align="right">12.33 ns</td> <td align="right">81.13 MHz</td>  </tr>
+<tr> <td>poses: CPose3DQuat.composePoint()</td> <td align="right">10.47 ns</td> <td align="right">95.47 MHz</td>  </tr>
+<tr> <td>poses: CPose3DQuat.invcomposePoint()</td> <td align="right">8.56 ns</td> <td align="right">116.82 MHz</td>  </tr>
+<tr> <td>poses: Conv CPose3DQuat <- CPose3D</td> <td align="right">9.85 ns</td> <td align="right">101.55 MHz</td>  </tr>
+<tr> <td>poses: Conv CPose3D -> CPose3DQuat</td> <td align="right">79.25 ns</td> <td align="right">12.62 MHz</td>  </tr>
+<tr> <td>poses: Conv CPose3DQuat Gauss <- CPose3D Gauss (DEF)</td> <td align="right">520.00 ns</td> <td align="right">1.92 MHz</td>  </tr>
+<tr> <td>poses: Conv CPose3DQuat Gauss <- CPose3D Gauss (Lin)</td> <td align="right">540.00 ns</td> <td align="right">1.85 MHz</td>  </tr>
+<tr> <td>poses: Conv CPose3DQuat Gauss <- CPose3D Gauss (SUT)</td> <td align="right">7.73 us</td> <td align="right">129.37 KHz</td>  </tr>
+<tr> <td>poses: Conv CPose3D Gauss <- CPose3DQuat Gauss (DEF)</td> <td align="right">284.60 ns</td> <td align="right">3.51 MHz</td>  </tr>
+<tr> <td>poses: Conv CPose3D Gauss <- CPose3DQuat Gauss (Lin)</td> <td align="right">285.00 ns</td> <td align="right">3.51 MHz</td>  </tr>
+<tr> <td>poses: Conv CPose3D Gauss <- CPose3DQuat Gauss (SUT)</td> <td align="right">4.03 us</td> <td align="right">248.11 KHz</td>  </tr>
+<tr> <td>CPose3DInterpolator: CPose3D insert pose at end</td> <td align="right">198.03 ns</td> <td align="right">5.05 MHz</td>  </tr>
+<tr> <td>CPose3DInterpolator: CPose3D insert pose random</td> <td align="right">215.30 ns</td> <td align="right">4.64 MHz</td>  </tr>
+<tr> <td>CPose3DInterpolator: CPose3D query</td> <td align="right">547.04 ns</td> <td align="right">1.83 MHz</td>  </tr>
+<tr> <td>CPose3DInterpolator: TPose3D insert pose at end</td> <td align="right">169.83 ns</td> <td align="right">5.89 MHz</td>  </tr>
+<tr> <td>CPose3DInterpolator: TPose3D insert pose random</td> <td align="right">201.49 ns</td> <td align="right">4.96 MHz</td>  </tr>
+<tr> <td>CPose3DInterpolator: TPose3D query</td> <td align="right">479.99 ns</td> <td align="right">2.08 MHz</td>  </tr>
+<tr> <td>CPose2DInterpolator: TPose2D insert pose at end</td> <td align="right">156.29 ns</td> <td align="right">6.40 MHz</td>  </tr>
+<tr> <td>CPose2DInterpolator: TPose2D insert pose random</td> <td align="right">174.72 ns</td> <td align="right">5.72 MHz</td>  </tr>
+<tr> <td>CPose2DInterpolator: TPose2D query</td> <td align="right">171.34 ns</td> <td align="right">5.84 MHz</td>  </tr>
+<tr> <td>matrix: unit, dyn[float], 3x3</td> <td align="right">20.30 ns</td> <td align="right">49.25 MHz</td>  </tr>
+<tr> <td>matrix: unit, dyn[double], 3x3</td> <td align="right">18.13 ns</td> <td align="right">55.16 MHz</td>  </tr>
+<tr> <td>matrix: unit, dyn[float], 6x6</td> <td align="right">44.79 ns</td> <td align="right">22.33 MHz</td>  </tr>
+<tr> <td>matrix: unit, dyn[double], 6x6</td> <td align="right">39.03 ns</td> <td align="right">25.62 MHz</td>  </tr>
 <tr> <td>matrix: unit, fix[float,3,3]</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
 <tr> <td>matrix: unit, fix[double,3,3]</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
-<tr> <td>matrix: unit, fix[float,6,6]</td> <td align="right">0.00 ns</td> <td align="right">1.00 THz</td>  </tr>
-<tr> <td>matrix: unit, fix[double,6,6]</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
-<tr> <td>matrix: multiply, dyn[float ], 3x3 * 3x3</td> <td align="right">85.90 ns</td> <td align="right">11.64 MHz</td>  </tr>
-<tr> <td>matrix: multiply, fix[float ], 3x3 * 3x3</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
-<tr> <td>matrix: multiply, dyn[double], 3x3 * 3x3</td> <td align="right">76.70 ns</td> <td align="right">13.04 MHz</td>  </tr>
-<tr> <td>matrix: multiply, fix[double], 3x3 * 3x3</td> <td align="right">0.30 ns</td> <td align="right">3.33 GHz</td>  </tr>
-<tr> <td>matrix: multiply, dyn[float ], 3x6 * 6x3</td> <td align="right">99.60 ns</td> <td align="right">10.04 MHz</td>  </tr>
-<tr> <td>matrix: multiply, fix[float ], 3x6 * 6x3</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
-<tr> <td>matrix: multiply, dyn[double], 3x6 * 6x3</td> <td align="right">101.40 ns</td> <td align="right">9.86 MHz</td>  </tr>
-<tr> <td>matrix: multiply, fix[double], 3x6 * 6x3</td> <td align="right">2.30 ns</td> <td align="right">434.78 MHz</td>  </tr>
-<tr> <td>matrix: multiply, dyn[float ], 10x40 * 40x10</td> <td align="right">1.08 us</td> <td align="right">927.39 KHz</td>  </tr>
-<tr> <td>matrix: multiply, fix[float ], 10x40 * 40x10</td> <td align="right">1.03 us</td> <td align="right">974.66 KHz</td>  </tr>
-<tr> <td>matrix: multiply, dyn[double], 10x40 * 40x10</td> <td align="right">1.38 us</td> <td align="right">725.53 KHz</td>  </tr>
-<tr> <td>matrix: multiply, fix[double], 10x40 * 40x10</td> <td align="right">1.34 us</td> <td align="right">747.55 KHz</td>  </tr>
-<tr> <td>matrix: inv, dyn[double] 3x3</td> <td align="right">689.00 ns</td> <td align="right">1.45 MHz</td>  </tr>
+<tr> <td>matrix: unit, fix[float,6,6]</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
+<tr> <td>matrix: unit, fix[double,6,6]</td> <td align="right">3.10 ns</td> <td align="right">322.58 MHz</td>  </tr>
+<tr> <td>matrix: multiply, dyn[float ], 3x3 * 3x3</td> <td align="right">74.80 ns</td> <td align="right">13.37 MHz</td>  </tr>
+<tr> <td>matrix: multiply, fix[float ], 3x3 * 3x3</td> <td align="right">0.10 ns</td> <td align="right">10.00 GHz</td>  </tr>
+<tr> <td>matrix: multiply, dyn[double], 3x3 * 3x3</td> <td align="right">73.30 ns</td> <td align="right">13.64 MHz</td>  </tr>
+<tr> <td>matrix: multiply, fix[double], 3x3 * 3x3</td> <td align="right">0.20 ns</td> <td align="right">5.00 GHz</td>  </tr>
+<tr> <td>matrix: multiply, dyn[float ], 3x6 * 6x3</td> <td align="right">88.20 ns</td> <td align="right">11.34 MHz</td>  </tr>
+<tr> <td>matrix: multiply, fix[float ], 3x6 * 6x3</td> <td align="right">2.80 ns</td> <td align="right">357.14 MHz</td>  </tr>
+<tr> <td>matrix: multiply, dyn[double], 3x6 * 6x3</td> <td align="right">92.10 ns</td> <td align="right">10.86 MHz</td>  </tr>
+<tr> <td>matrix: multiply, fix[double], 3x6 * 6x3</td> <td align="right">0.80 ns</td> <td align="right">1.25 GHz</td>  </tr>
+<tr> <td>matrix: multiply, dyn[float ], 10x40 * 40x10</td> <td align="right">1.10 us</td> <td align="right">905.88 KHz</td>  </tr>
+<tr> <td>matrix: multiply, fix[float ], 10x40 * 40x10</td> <td align="right">787.10 ns</td> <td align="right">1.27 MHz</td>  </tr>
+<tr> <td>matrix: multiply, dyn[double], 10x40 * 40x10</td> <td align="right">1.71 us</td> <td align="right">583.74 KHz</td>  </tr>
+<tr> <td>matrix: multiply, fix[double], 10x40 * 40x10</td> <td align="right">1.31 us</td> <td align="right">762.49 KHz</td>  </tr>
+<tr> <td>matrix: inv, dyn[double] 3x3</td> <td align="right">552.00 ns</td> <td align="right">1.81 MHz</td>  </tr>
 <tr> <td>matrix: inv, fix[double] 3x3</td> <td align="right">1.00 ns</td> <td align="right">1.00 GHz</td>  </tr>
-<tr> <td>matrix: inv, dyn[double] 6x6</td> <td align="right">1.40 us</td> <td align="right">713.78 KHz</td>  </tr>
-<tr> <td>matrix: inv, fix[double] 6x6</td> <td align="right">1.03 us</td> <td align="right">970.87 KHz</td>  </tr>
-<tr> <td>matrix: inv, dyn[double] 20x20</td> <td align="right">11.28 us</td> <td align="right">88.64 KHz</td>  </tr>
-<tr> <td>matrix: inv, fix[double] 20x20</td> <td align="right">10.48 us</td> <td align="right">95.42 KHz</td>  </tr>
-<tr> <td>matrix: inv, dyn[double] 40x40</td> <td align="right">46.20 us</td> <td align="right">21.64 KHz</td>  </tr>
-<tr> <td>matrix: inv, fix[double] 40x40</td> <td align="right">45.84 us</td> <td align="right">21.82 KHz</td>  </tr>
-<tr> <td>matrix: det, dyn[double] 2x2</td> <td align="right">178.70 ns</td> <td align="right">5.60 MHz</td>  </tr>
+<tr> <td>matrix: inv, dyn[double] 6x6</td> <td align="right">1.56 us</td> <td align="right">640.20 KHz</td>  </tr>
+<tr> <td>matrix: inv, fix[double] 6x6</td> <td align="right">811.00 ns</td> <td align="right">1.23 MHz</td>  </tr>
+<tr> <td>matrix: inv, dyn[double] 20x20</td> <td align="right">9.61 us</td> <td align="right">104.07 KHz</td>  </tr>
+<tr> <td>matrix: inv, fix[double] 20x20</td> <td align="right">8.32 us</td> <td align="right">120.18 KHz</td>  </tr>
+<tr> <td>matrix: inv, dyn[double] 40x40</td> <td align="right">40.62 us</td> <td align="right">24.62 KHz</td>  </tr>
+<tr> <td>matrix: inv, fix[double] 40x40</td> <td align="right">40.56 us</td> <td align="right">24.65 KHz</td>  </tr>
+<tr> <td>matrix: det, dyn[double] 2x2</td> <td align="right">162.40 ns</td> <td align="right">6.16 MHz</td>  </tr>
 <tr> <td>matrix: det, fix[double] 2x2</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
-<tr> <td>matrix: det, dyn[double] 3x3</td> <td align="right">273.70 ns</td> <td align="right">3.65 MHz</td>  </tr>
+<tr> <td>matrix: det, dyn[double] 3x3</td> <td align="right">222.70 ns</td> <td align="right">4.49 MHz</td>  </tr>
 <tr> <td>matrix: det, fix[double] 3x3</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
-<tr> <td>matrix: det, dyn[double] 6x6</td> <td align="right">614.80 ns</td> <td align="right">1.63 MHz</td>  </tr>
-<tr> <td>matrix: det, fix[double] 6x6</td> <td align="right">556.10 ns</td> <td align="right">1.80 MHz</td>  </tr>
-<tr> <td>matrix: det, dyn[double] 20x20</td> <td align="right">6.24 us</td> <td align="right">160.24 KHz</td>  </tr>
-<tr> <td>matrix: det, fix[double] 20x20</td> <td align="right">5.93 us</td> <td align="right">168.73 KHz</td>  </tr>
-<tr> <td>matrix: det, dyn[double] 40x40</td> <td align="right">24.19 us</td> <td align="right">41.34 KHz</td>  </tr>
-<tr> <td>matrix: det, fix[double] 40x40</td> <td align="right">23.77 us</td> <td align="right">42.06 KHz</td>  </tr>
-<tr> <td>matrix: chol, dyn[double] 4x4</td> <td align="right">320.00 ns</td> <td align="right">3.12 MHz</td>  </tr>
-<tr> <td>matrix: chol, fix[double] 4x4</td> <td align="right">90.00 ns</td> <td align="right">11.11 MHz</td>  </tr>
-<tr> <td>matrix: chol, dyn[double] 40x40</td> <td align="right">14.30 us</td> <td align="right">69.93 KHz</td>  </tr>
-<tr> <td>matrix: chol, fix[double] 40x40</td> <td align="right">13.65 us</td> <td align="right">73.26 KHz</td>  </tr>
-<tr> <td>matrix: chol, sparse [2x2;2x2]</td> <td align="right">125.40 us</td> <td align="right">7.97 KHz</td>  </tr>
-<tr> <td>matrix: chol, sparse [30x30;10x10]</td> <td align="right">43.90 us</td> <td align="right">22.78 KHz</td>  </tr>
-<tr> <td>matrix: chol, dyn[double] 10x[6x6]</td> <td align="right">39.00 us</td> <td align="right">25.64 KHz</td>  </tr>
-<tr> <td>matrix: chol, sparse      10x[6x6]</td> <td align="right">20.26 us</td> <td align="right">49.36 KHz</td>  </tr>
-<tr> <td>matrix: chol, dyn[double] 20x[6x6]</td> <td align="right">172.00 us</td> <td align="right">5.81 KHz</td>  </tr>
-<tr> <td>matrix: chol, sparse      20x[6x6]</td> <td align="right">36.77 us</td> <td align="right">27.20 KHz</td>  </tr>
-<tr> <td>matrix: chol, dyn[double] 50x[6x6]</td> <td align="right">1.82 ms</td> <td align="right">549.33  Hz</td>  </tr>
-<tr> <td>matrix: chol, sparse      50x[6x6]</td> <td align="right">90.15 us</td> <td align="right">11.09 KHz</td>  </tr>
-<tr> <td>matrix: chol, dyn[double] 100x[6x6]</td> <td align="right">13.65 ms</td> <td align="right">73.24  Hz</td>  </tr>
-<tr> <td>matrix: chol, sparse      100x[6x6]</td> <td align="right">177.94 us</td> <td align="right">5.62 KHz</td>  </tr>
-<tr> <td>matrix: chol, dyn[double] 120x[6x6]</td> <td align="right">24.79 ms</td> <td align="right">40.33  Hz</td>  </tr>
-<tr> <td>matrix: chol, sparse      120x[6x6]</td> <td align="right">208.04 us</td> <td align="right">4.81 KHz</td>  </tr>
-<tr> <td>matrix: chol, dyn[double] 140x[6x6]</td> <td align="right">36.14 ms</td> <td align="right">27.67  Hz</td>  </tr>
-<tr> <td>matrix: chol, sparse      140x[6x6]</td> <td align="right">242.66 us</td> <td align="right">4.12 KHz</td>  </tr>
+<tr> <td>matrix: det, dyn[double] 6x6</td> <td align="right">498.50 ns</td> <td align="right">2.01 MHz</td>  </tr>
+<tr> <td>matrix: det, fix[double] 6x6</td> <td align="right">317.50 ns</td> <td align="right">3.15 MHz</td>  </tr>
+<tr> <td>matrix: det, dyn[double] 20x20</td> <td align="right">4.31 us</td> <td align="right">231.87 KHz</td>  </tr>
+<tr> <td>matrix: det, fix[double] 20x20</td> <td align="right">3.96 us</td> <td align="right">252.75 KHz</td>  </tr>
+<tr> <td>matrix: det, dyn[double] 40x40</td> <td align="right">17.05 us</td> <td align="right">58.64 KHz</td>  </tr>
+<tr> <td>matrix: det, fix[double] 40x40</td> <td align="right">16.89 us</td> <td align="right">59.21 KHz</td>  </tr>
+<tr> <td>matrix: chol, dyn[double] 4x4</td> <td align="right">530.00 ns</td> <td align="right">1.89 MHz</td>  </tr>
+<tr> <td>matrix: chol, fix[double] 4x4</td> <td align="right">290.00 ns</td> <td align="right">3.45 MHz</td>  </tr>
+<tr> <td>matrix: chol, dyn[double] 40x40</td> <td align="right">10.81 us</td> <td align="right">92.51 KHz</td>  </tr>
+<tr> <td>matrix: chol, fix[double] 40x40</td> <td align="right">10.61 us</td> <td align="right">94.25 KHz</td>  </tr>
+<tr> <td>matrix: chol, sparse [2x2;2x2]</td> <td align="right">6.10 us</td> <td align="right">163.93 KHz</td>  </tr>
+<tr> <td>matrix: chol, sparse [30x30;10x10]</td> <td align="right">36.50 us</td> <td align="right">27.40 KHz</td>  </tr>
+<tr> <td>matrix: chol, dyn[double] 10x[6x6]</td> <td align="right">28.80 us</td> <td align="right">34.72 KHz</td>  </tr>
+<tr> <td>matrix: chol, sparse      10x[6x6]</td> <td align="right">16.74 us</td> <td align="right">59.74 KHz</td>  </tr>
+<tr> <td>matrix: chol, dyn[double] 20x[6x6]</td> <td align="right">151.40 us</td> <td align="right">6.61 KHz</td>  </tr>
+<tr> <td>matrix: chol, sparse      20x[6x6]</td> <td align="right">29.33 us</td> <td align="right">34.09 KHz</td>  </tr>
+<tr> <td>matrix: chol, dyn[double] 50x[6x6]</td> <td align="right">1.67 ms</td> <td align="right">598.01  Hz</td>  </tr>
+<tr> <td>matrix: chol, sparse      50x[6x6]</td> <td align="right">69.84 us</td> <td align="right">14.32 KHz</td>  </tr>
+<tr> <td>matrix: chol, dyn[double] 100x[6x6]</td> <td align="right">14.94 ms</td> <td align="right">66.92  Hz</td>  </tr>
+<tr> <td>matrix: chol, sparse      100x[6x6]</td> <td align="right">142.72 us</td> <td align="right">7.01 KHz</td>  </tr>
+<tr> <td>matrix: chol, dyn[double] 120x[6x6]</td> <td align="right">23.75 ms</td> <td align="right">42.10  Hz</td>  </tr>
+<tr> <td>matrix: chol, sparse      120x[6x6]</td> <td align="right">163.62 us</td> <td align="right">6.11 KHz</td>  </tr>
+<tr> <td>matrix: chol, dyn[double] 140x[6x6]</td> <td align="right">36.15 ms</td> <td align="right">27.66  Hz</td>  </tr>
+<tr> <td>matrix: chol, sparse      140x[6x6]</td> <td align="right">190.66 us</td> <td align="right">5.24 KHz</td>  </tr>
 <tr> <td>matrix: loadFromArray[double] 4x4</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
 <tr> <td>matrix: load Eigen::Map[double] 4x4</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
-<tr> <td>gridmap2D: getCell</td> <td align="right">3.44 ns</td> <td align="right">290.68 MHz</td>  </tr>
-<tr> <td>gridmap2D: setCell</td> <td align="right">3.65 ns</td> <td align="right">273.66 MHz</td>  </tr>
-<tr> <td>gridmap2D: updateCell</td> <td align="right">9.02 ns</td> <td align="right">110.84 MHz</td>  </tr>
-<tr> <td>gridmap2D: updateCell_fast_occupied</td> <td align="right">1.13 ns</td> <td align="right">887.08 MHz</td>  </tr>
-<tr> <td>gridmap2D: insert scan w/o widening</td> <td align="right">73.88 us</td> <td align="right">13.54 KHz</td>  </tr>
-<tr> <td>gridmap2D: insert scan with widening</td> <td align="right">198.55 us</td> <td align="right">5.04 KHz</td>  </tr>
-<tr> <td>gridmap2D: resize</td> <td align="right">267.00 us</td> <td align="right">3.75 KHz</td>  </tr>
-<tr> <td>gridmap2D: computeLikelihood</td> <td align="right">8.16 us</td> <td align="right">122.62 KHz</td>  </tr>
-<tr> <td>gridmap2D: determineMatching2D</td> <td align="right">27.41 us</td> <td align="right">36.49 KHz</td>  </tr>
-<tr> <td>pointmap: insert 100 scans</td> <td align="right">405.71 us</td> <td align="right">2.46 KHz</td>  </tr>
-<tr> <td>pointmap: build 2D kd-tree of 1 scan</td> <td align="right">1.04 us</td> <td align="right">961.54 KHz</td>  </tr>
-<tr> <td>pointmap: build 2D kd-tree of 100 scan</td> <td align="right">104.84 us</td> <td align="right">9.54 KHz</td>  </tr>
-<tr> <td>pointmap: build 2D kd-tree of 1000 scan</td> <td align="right">1.14 ms</td> <td align="right">874.31  Hz</td>  </tr>
-<tr> <td>pointmap: build 3D kd-tree of 1 scan</td> <td align="right">1.44 us</td> <td align="right">694.44 KHz</td>  </tr>
-<tr> <td>pointmap: build 3D kd-tree of 100 scan</td> <td align="right">102.32 us</td> <td align="right">9.77 KHz</td>  </tr>
-<tr> <td>pointmap: build 3D kd-tree of 1000 scan</td> <td align="right">1.13 ms</td> <td align="right">884.61  Hz</td>  </tr>
-<tr> <td>pointmap: kd-tree 2d query on 10 scans</td> <td align="right">386.00 ns</td> <td align="right">2.59 MHz</td>  </tr>
-<tr> <td>pointmap: kd-tree 2d query on 1000 scans</td> <td align="right">29.03 us</td> <td align="right">34.44 KHz</td>  </tr>
-<tr> <td>pointmap: kd-tree 2d query on 10000 scans</td> <td align="right">3.26 ms</td> <td align="right">306.51  Hz</td>  </tr>
-<tr> <td>pointmap: (insert scan+2D kd-tree query) x 10</td> <td align="right">1.16 ms</td> <td align="right">865.76  Hz</td>  </tr>
-<tr> <td>pointmap: (insert scan+2D kd-tree query) x 50</td> <td align="right">28.81 ms</td> <td align="right">34.71  Hz</td>  </tr>
-<tr> <td>pointmap: (insert scan+3D kd-tree query) x 10</td> <td align="right">1.12 ms</td> <td align="right">889.36  Hz</td>  </tr>
-<tr> <td>pointmap: (insert scan+3D kd-tree query) x 50</td> <td align="right">28.03 ms</td> <td align="right">35.68  Hz</td>  </tr>
-<tr> <td>pointmap: computeMatchingWith2D</td> <td align="right">26.38 us</td> <td align="right">37.91 KHz</td>  </tr>
-<tr> <td>pointmap: boundingBox (10 scans)</td> <td align="right">1.08 us</td> <td align="right">922.44 KHz</td>  </tr>
-<tr> <td>pointmap: boundingBox (1000 scans)</td> <td align="right">105.57 us</td> <td align="right">9.47 KHz</td>  </tr>
-<tr> <td>random: drawUniform32bit</td> <td align="right">28.83 ns</td> <td align="right">34.69 MHz</td>  </tr>
-<tr> <td>random: drawUniform</td> <td align="right">28.76 ns</td> <td align="right">34.77 MHz</td>  </tr>
-<tr> <td>random: drawGaussian1D_normalized</td> <td align="right">42.33 ns</td> <td align="right">23.62 MHz</td>  </tr>
-<tr> <td>random: drawGaussian1D</td> <td align="right">42.23 ns</td> <td align="right">23.68 MHz</td>  </tr>
-<tr> <td>random: system rand()</td> <td align="right">19.07 ns</td> <td align="right">52.44 MHz</td>  </tr>
-<tr> <td>random: drawGaussianMultivariate(fixed 3x3)</td> <td align="right">682.73 ns</td> <td align="right">1.46 MHz</td>  </tr>
-<tr> <td>random: drawGaussianMultivariate(dyn 3x3)</td> <td align="right">1.39 us</td> <td align="right">721.67 KHz</td>  </tr>
-<tr> <td>random: drawGaussianMultivariateMany(fixed 2x2, 1000)</td> <td align="right">89.14 ns</td> <td align="right">11.22 MHz</td>  </tr>
-<tr> <td>random: drawGaussianMultivariateMany(fixed 3x3, 1000)</td> <td align="right">138.21 ns</td> <td align="right">7.24 MHz</td>  </tr>
-<tr> <td>random: drawGaussianMultivariateMany(fixed 6x6, 1000)</td> <td align="right">312.32 ns</td> <td align="right">3.20 MHz</td>  </tr>
-<tr> <td>random: drawGaussianMultivariateMany(dyn 2x2, 1000)</td> <td align="right">102.42 ns</td> <td align="right">9.76 MHz</td>  </tr>
-<tr> <td>random: drawGaussianMultivariateMany(dyn 3x3, 1000)</td> <td align="right">156.26 ns</td> <td align="right">6.40 MHz</td>  </tr>
-<tr> <td>random: drawGaussianMultivariateMany(dyn 6x6, 1000)</td> <td align="right">335.25 ns</td> <td align="right">2.98 MHz</td>  </tr>
-<tr> <td>random: permuteVector (len=10)</td> <td align="right">5.40 us</td> <td align="right">185.03 KHz</td>  </tr>
-<tr> <td>random: permuteVector (len=100)</td> <td align="right">7.42 us</td> <td align="right">134.80 KHz</td>  </tr>
-<tr> <td>random: permuteVector (len=1000)</td> <td align="right">27.66 us</td> <td align="right">36.15 KHz</td>  </tr>
-<tr> <td>math: round</td> <td align="right">0.04 ns</td> <td align="right">24.77 GHz</td>  </tr>
-<tr> <td>math: std::hypot(float)</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
+<tr> <td>gridmap2D: getCell</td> <td align="right">4.07 ns</td> <td align="right">245.78 MHz</td>  </tr>
+<tr> <td>gridmap2D: setCell</td> <td align="right">2.90 ns</td> <td align="right">344.23 MHz</td>  </tr>
+<tr> <td>gridmap2D: updateCell</td> <td align="right">5.82 ns</td> <td align="right">171.70 MHz</td>  </tr>
+<tr> <td>gridmap2D: updateCell_fast_occupied</td> <td align="right">0.86 ns</td> <td align="right">1.17 GHz</td>  </tr>
+<tr> <td>gridmap2D: insert scan w/o widening</td> <td align="right">56.46 us</td> <td align="right">17.71 KHz</td>  </tr>
+<tr> <td>gridmap2D: insert scan with widening</td> <td align="right">158.80 us</td> <td align="right">6.30 KHz</td>  </tr>
+<tr> <td>gridmap2D: resize</td> <td align="right">308.00 us</td> <td align="right">3.25 KHz</td>  </tr>
+<tr> <td>gridmap2D: computeLikelihood</td> <td align="right">9.34 us</td> <td align="right">107.06 KHz</td>  </tr>
+<tr> <td>gridmap2D: determineMatching2D</td> <td align="right">22.76 us</td> <td align="right">43.94 KHz</td>  </tr>
+<tr> <td>pointmap: insert 100 scans</td> <td align="right">296.72 us</td> <td align="right">3.37 KHz</td>  </tr>
+<tr> <td>pointmap: build 2D kd-tree of 1 scan</td> <td align="right">1.40 us</td> <td align="right">714.29 KHz</td>  </tr>
+<tr> <td>pointmap: build 2D kd-tree of 100 scan</td> <td align="right">82.24 us</td> <td align="right">12.16 KHz</td>  </tr>
+<tr> <td>pointmap: build 2D kd-tree of 1000 scan</td> <td align="right">911.44 us</td> <td align="right">1.10 KHz</td>  </tr>
+<tr> <td>pointmap: build 3D kd-tree of 1 scan</td> <td align="right">920.00 ns</td> <td align="right">1.09 MHz</td>  </tr>
+<tr> <td>pointmap: build 3D kd-tree of 100 scan</td> <td align="right">87.64 us</td> <td align="right">11.41 KHz</td>  </tr>
+<tr> <td>pointmap: build 3D kd-tree of 1000 scan</td> <td align="right">918.80 us</td> <td align="right">1.09 KHz</td>  </tr>
+<tr> <td>pointmap: kd-tree 2d query on 10 scans</td> <td align="right">317.00 ns</td> <td align="right">3.15 MHz</td>  </tr>
+<tr> <td>pointmap: kd-tree 2d query on 1000 scans</td> <td align="right">22.90 us</td> <td align="right">43.67 KHz</td>  </tr>
+<tr> <td>pointmap: kd-tree 2d query on 10000 scans</td> <td align="right">2.66 ms</td> <td align="right">375.31  Hz</td>  </tr>
+<tr> <td>pointmap: (insert scan+2D kd-tree query) x 10</td> <td align="right">946.05 us</td> <td align="right">1.06 KHz</td>  </tr>
+<tr> <td>pointmap: (insert scan+2D kd-tree query) x 50</td> <td align="right">23.20 ms</td> <td align="right">43.10  Hz</td>  </tr>
+<tr> <td>pointmap: (insert scan+3D kd-tree query) x 10</td> <td align="right">936.50 us</td> <td align="right">1.07 KHz</td>  </tr>
+<tr> <td>pointmap: (insert scan+3D kd-tree query) x 50</td> <td align="right">23.27 ms</td> <td align="right">42.98  Hz</td>  </tr>
+<tr> <td>pointmap: computeMatchingWith2D</td> <td align="right">21.92 us</td> <td align="right">45.62 KHz</td>  </tr>
+<tr> <td>pointmap: boundingBox (10 scans)</td> <td align="right">892.30 ns</td> <td align="right">1.12 MHz</td>  </tr>
+<tr> <td>pointmap: boundingBox (1000 scans)</td> <td align="right">85.56 us</td> <td align="right">11.69 KHz</td>  </tr>
+<tr> <td>random: drawUniform32bit</td> <td align="right">22.75 ns</td> <td align="right">43.95 MHz</td>  </tr>
+<tr> <td>random: drawUniform</td> <td align="right">22.74 ns</td> <td align="right">43.98 MHz</td>  </tr>
+<tr> <td>random: drawGaussian1D_normalized</td> <td align="right">55.74 ns</td> <td align="right">17.94 MHz</td>  </tr>
+<tr> <td>random: drawGaussian1D</td> <td align="right">55.81 ns</td> <td align="right">17.92 MHz</td>  </tr>
+<tr> <td>random: system rand()</td> <td align="right">10.62 ns</td> <td align="right">94.14 MHz</td>  </tr>
+<tr> <td>random: drawGaussianMultivariate(fixed 3x3)</td> <td align="right">551.60 ns</td> <td align="right">1.81 MHz</td>  </tr>
+<tr> <td>random: drawGaussianMultivariate(dyn 3x3)</td> <td align="right">1.19 us</td> <td align="right">837.52 KHz</td>  </tr>
+<tr> <td>random: drawGaussianMultivariateMany(fixed 2x2, 1000)</td> <td align="right">115.14 ns</td> <td align="right">8.69 MHz</td>  </tr>
+<tr> <td>random: drawGaussianMultivariateMany(fixed 3x3, 1000)</td> <td align="right">180.82 ns</td> <td align="right">5.53 MHz</td>  </tr>
+<tr> <td>random: drawGaussianMultivariateMany(fixed 6x6, 1000)</td> <td align="right">380.13 ns</td> <td align="right">2.63 MHz</td>  </tr>
+<tr> <td>random: drawGaussianMultivariateMany(dyn 2x2, 1000)</td> <td align="right">122.87 ns</td> <td align="right">8.14 MHz</td>  </tr>
+<tr> <td>random: drawGaussianMultivariateMany(dyn 3x3, 1000)</td> <td align="right">197.55 ns</td> <td align="right">5.06 MHz</td>  </tr>
+<tr> <td>random: drawGaussianMultivariateMany(dyn 6x6, 1000)</td> <td align="right">390.58 ns</td> <td align="right">2.56 MHz</td>  </tr>
+<tr> <td>random: permuteVector (len=10)</td> <td align="right">1.69 us</td> <td align="right">590.81 KHz</td>  </tr>
+<tr> <td>random: permuteVector (len=100)</td> <td align="right">3.30 us</td> <td align="right">303.24 KHz</td>  </tr>
+<tr> <td>random: permuteVector (len=1000)</td> <td align="right">19.67 us</td> <td align="right">50.83 KHz</td>  </tr>
+<tr> <td>math: round</td> <td align="right">0.03 ns</td> <td align="right">30.75 GHz</td>  </tr>
+<tr> <td>math: std::hypot(float)</td> <td align="right">0.00 ns</td> <td align="right">100.00 THz</td>  </tr>
 <tr> <td>math: mrpt::hypot_fast(float)</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
 <tr> <td>math: mrpt::hypot_fast(double)</td> <td align="right">0.00 ns</td> <td align="right">inf THz</td>  </tr>
-<tr> <td>images: Save as JPEG (640x480, quality=95%)</td> <td align="right">6.91 ms</td> <td align="right">144.62  Hz</td>  </tr>
-<tr> <td>images: Save as JPEG (800x600, quality=95%)</td> <td align="right">10.90 ms</td> <td align="right">91.72  Hz</td>  </tr>
-<tr> <td>images: Save as JPEG (1024x768, quality=95%)</td> <td align="right">18.19 ms</td> <td align="right">54.98  Hz</td>  </tr>
-<tr> <td>images: Save as JPEG (640x480, quality=75%)</td> <td align="right">4.74 ms</td> <td align="right">211.08  Hz</td>  </tr>
-<tr> <td>images: Save as JPEG (800x600, quality=75%)</td> <td align="right">7.39 ms</td> <td align="right">135.37  Hz</td>  </tr>
-<tr> <td>images: Save as JPEG (1024x768, quality=75%)</td> <td align="right">12.14 ms</td> <td align="right">82.39  Hz</td>  </tr>
-<tr> <td>images: Save BMP 800x600 disk</td> <td align="right">9.55 ms</td> <td align="right">104.73  Hz</td>  </tr>
-<tr> <td>images: Save PNG 800x600 disk</td> <td align="right">30.50 ms</td> <td align="right">32.79  Hz</td>  </tr>
-<tr> <td>images: Save JPG 800x600 disk</td> <td align="right">10.85 ms</td> <td align="right">92.12  Hz</td>  </tr>
-<tr> <td>images: Load BMP 800x600 disk</td> <td align="right">370.33 us</td> <td align="right">2.70 KHz</td>  </tr>
-<tr> <td>images: Load PNG 800x600 disk</td> <td align="right">10.75 ms</td> <td align="right">93.05  Hz</td>  </tr>
-<tr> <td>images: Load JPG 800x600 disk</td> <td align="right">9.48 ms</td> <td align="right">105.44  Hz</td>  </tr>
-<tr> <td>images: Save BMP 800x600 shared mem</td> <td align="right">557.37 us</td> <td align="right">1.79 KHz</td>  </tr>
-<tr> <td>images: Save PNG 800x600 shared mem</td> <td align="right">23.05 ms</td> <td align="right">43.39  Hz</td>  </tr>
-<tr> <td>images: Save JPG 800x600 shared mem</td> <td align="right">7.67 ms</td> <td align="right">130.43  Hz</td>  </tr>
-<tr> <td>images: Load BMP 800x600 shared mem</td> <td align="right">365.87 us</td> <td align="right">2.73 KHz</td>  </tr>
-<tr> <td>images: Load PNG 800x600 shared mem</td> <td align="right">10.79 ms</td> <td align="right">92.71  Hz</td>  </tr>
-<tr> <td>images: Load JPG 800x600 shared mem</td> <td align="right">9.43 ms</td> <td align="right">106.01  Hz</td>  </tr>
-<tr> <td>images: Gauss filter (640x480)</td> <td align="right">2.63 ms</td> <td align="right">379.89  Hz</td>  </tr>
-<tr> <td>images: Gauss filter (800x600)</td> <td align="right">3.99 ms</td> <td align="right">250.44  Hz</td>  </tr>
-<tr> <td>images: Gauss filter (1024x768)</td> <td align="right">6.59 ms</td> <td align="right">151.71  Hz</td>  </tr>
-<tr> <td>images: Half sample GRAY (160x120)</td> <td align="right">736.67 ns</td> <td align="right">1.36 MHz</td>  </tr>
-<tr> <td>images: Half sample GRAY (320x240)</td> <td align="right">1.87 us</td> <td align="right">533.81 KHz</td>  </tr>
-<tr> <td>images: Half sample GRAY (640x480)</td> <td align="right">8.93 us</td> <td align="right">112.02 KHz</td>  </tr>
-<tr> <td>images: Half sample GRAY (800x600)</td> <td align="right">15.05 us</td> <td align="right">66.46 KHz</td>  </tr>
-<tr> <td>images: Half sample GRAY (1024x768)</td> <td align="right">24.22 us</td> <td align="right">41.28 KHz</td>  </tr>
-<tr> <td>images: Half sample GRAY (1280x1024)</td> <td align="right">40.85 us</td> <td align="right">24.48 KHz</td>  </tr>
-<tr> <td>images: Half sample RGB (160x120)</td> <td align="right">1.46 us</td> <td align="right">684.93 KHz</td>  </tr>
-<tr> <td>images: Half sample RGB (320x240)</td> <td align="right">5.33 us</td> <td align="right">187.62 KHz</td>  </tr>
-<tr> <td>images: Half sample RGB (640x480)</td> <td align="right">25.77 us</td> <td align="right">38.80 KHz</td>  </tr>
-<tr> <td>images: Half sample RGB (800x600)</td> <td align="right">40.51 us</td> <td align="right">24.68 KHz</td>  </tr>
-<tr> <td>images: Half sample RGB (1024x768)</td> <td align="right">68.64 us</td> <td align="right">14.57 KHz</td>  </tr>
-<tr> <td>images: Half sample RGB (1280x1024)</td> <td align="right">135.92 us</td> <td align="right">7.36 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth GRAY (160x120)</td> <td align="right">996.67 ns</td> <td align="right">1.00 MHz</td>  </tr>
-<tr> <td>images: Half sample smooth GRAY (320x240)</td> <td align="right">3.38 us</td> <td align="right">296.15 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth GRAY (640x480)</td> <td align="right">16.93 us</td> <td align="right">59.08 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth GRAY (800x600)</td> <td align="right">26.58 us</td> <td align="right">37.62 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth GRAY (1024x768)</td> <td align="right">42.18 us</td> <td align="right">23.71 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth GRAY (1280x1024)</td> <td align="right">72.75 us</td> <td align="right">13.75 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth RGB (160x120)</td> <td align="right">13.79 us</td> <td align="right">72.52 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth RGB (320x240)</td> <td align="right">44.94 us</td> <td align="right">22.25 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth RGB (640x480)</td> <td align="right">174.09 us</td> <td align="right">5.74 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth RGB (800x600)</td> <td align="right">163.99 us</td> <td align="right">6.10 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth RGB (1024x768)</td> <td align="right">164.36 us</td> <td align="right">6.08 KHz</td>  </tr>
-<tr> <td>images: Half sample smooth RGB (1280x1024)</td> <td align="right">361.08 us</td> <td align="right">2.77 KHz</td>  </tr>
-<tr> <td>images: RGB->GRAY 8u (40x30)</td> <td align="right">6.53 us</td> <td align="right">153.22 KHz</td>  </tr>
-<tr> <td>images: RGB->GRAY 8u (80x60)</td> <td align="right">1.71 us</td> <td align="right">585.94 KHz</td>  </tr>
-<tr> <td>images: RGB->GRAY 8u (160x120)</td> <td align="right">5.81 us</td> <td align="right">172.12 KHz</td>  </tr>
-<tr> <td>images: RGB->GRAY 8u (320x240)</td> <td align="right">22.61 us</td> <td align="right">44.23 KHz</td>  </tr>
-<tr> <td>images: RGB->GRAY 8u (640x480)</td> <td align="right">91.87 us</td> <td align="right">10.88 KHz</td>  </tr>
-<tr> <td>images: RGB->GRAY 8u (800x600)</td> <td align="right">143.60 us</td> <td align="right">6.96 KHz</td>  </tr>
-<tr> <td>images: RGB->GRAY 8u (1024x768)</td> <td align="right">234.59 us</td> <td align="right">4.26 KHz</td>  </tr>
-<tr> <td>images: RGB->GRAY 8u (1280x1024)</td> <td align="right">429.74 us</td> <td align="right">2.33 KHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=2 5x5)</td> <td align="right">34.07 ns</td> <td align="right">29.35 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=3 7x7)</td> <td align="right">42.13 ns</td> <td align="right">23.74 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=4 9x9)</td> <td align="right">47.86 ns</td> <td align="right">20.89 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=5 10x10)</td> <td align="right">60.00 ns</td> <td align="right">16.67 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=6 13x13)</td> <td align="right">67.29 ns</td> <td align="right">14.86 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=7 15x15)</td> <td align="right">80.34 ns</td> <td align="right">12.45 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=8 17x17)</td> <td align="right">79.85 ns</td> <td align="right">12.52 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=9 19x19)</td> <td align="right">83.52 ns</td> <td align="right">11.97 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=10 21x21)</td> <td align="right">89.49 ns</td> <td align="right">11.17 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=11 23x23)</td> <td align="right">77.80 ns</td> <td align="right">12.85 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=12 25x25)</td> <td align="right">101.19 ns</td> <td align="right">9.88 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=13 27x27)</td> <td align="right">88.81 ns</td> <td align="right">11.26 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=14 29x29)</td> <td align="right">93.86 ns</td> <td align="right">10.65 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=15 31x31)</td> <td align="right">97.66 ns</td> <td align="right">10.24 MHz</td>  </tr>
-<tr> <td>images: KLT score (WIN=16 33x33)</td> <td align="right">134.14 ns</td> <td align="right">7.45 MHz</td>  </tr>
-<tr> <td>images: buildPyramid 640x480,4 levs,no smooth,no gray</td> <td align="right">99.49 us</td> <td align="right">10.05 KHz</td>  </tr>
-<tr> <td>images: buildPyramid 640x480,4 levs,   smooth,no gray</td> <td align="right">292.90 us</td> <td align="right">3.41 KHz</td>  </tr>
-<tr> <td>images: buildPyramid 640x480,4 levs,no smooth,   gray</td> <td align="right">104.91 us</td> <td align="right">9.53 KHz</td>  </tr>
-<tr> <td>images: buildPyramid 640x480,4 levs,   smooth,   gray</td> <td align="right">113.78 us</td> <td align="right">8.79 KHz</td>  </tr>
-<tr> <td>images: buildPyramid 640x480,8 levs,no smooth,no gray</td> <td align="right">102.80 us</td> <td align="right">9.73 KHz</td>  </tr>
-<tr> <td>images: buildPyramid 640x480,8 levs,   smooth,no gray</td> <td align="right">295.85 us</td> <td align="right">3.38 KHz</td>  </tr>
-<tr> <td>images: buildPyramid 640x480,8 levs,no smooth,   gray</td> <td align="right">107.33 us</td> <td align="right">9.32 KHz</td>  </tr>
-<tr> <td>images: buildPyramid 640x480,8 levs,   smooth,   gray</td> <td align="right">118.35 us</td> <td align="right">8.45 KHz</td>  </tr>
-<tr> <td>stereo: prepare rectify map 640x480 RGB</td> <td align="right">22.56 ms</td> <td align="right">44.34  Hz</td>  </tr>
-<tr> <td>stereo: prepare rectify map 800x600 RGB</td> <td align="right">35.19 ms</td> <td align="right">28.42  Hz</td>  </tr>
-<tr> <td>stereo: prepare rectify map 1024x768 RGB</td> <td align="right">57.95 ms</td> <td align="right">17.26  Hz</td>  </tr>
-<tr> <td>stereo: prepare rectify map 1024x768->800x600 RGB</td> <td align="right">35.29 ms</td> <td align="right">28.33  Hz</td>  </tr>
-<tr> <td>stereo: prepare rectify map 1024x768->640x480 RGB</td> <td align="right">22.48 ms</td> <td align="right">44.49  Hz</td>  </tr>
-<tr> <td>stereo: rectify 640x480 RGB</td> <td align="right">1.98 ms</td> <td align="right">504.03  Hz</td>  </tr>
-<tr> <td>stereo: rectify 800x600 RGB</td> <td align="right">2.78 ms</td> <td align="right">360.33  Hz</td>  </tr>
-<tr> <td>stereo: rectify 1024x768 RGB</td> <td align="right">3.46 ms</td> <td align="right">288.86  Hz</td>  </tr>
-<tr> <td>stereo: rectify 1024x768->800x600 RGB</td> <td align="right">2.47 ms</td> <td align="right">404.27  Hz</td>  </tr>
-<tr> <td>stereo: rectify 1024x768->640x480 RGB</td> <td align="right">2.19 ms</td> <td align="right">457.14  Hz</td>  </tr>
-<tr> <td>stereo: rectify 640x480 GRAY</td> <td align="right">1.89 ms</td> <td align="right">529.35  Hz</td>  </tr>
-<tr> <td>stereo: rectify 800x600 GRAY</td> <td align="right">2.04 ms</td> <td align="right">490.11  Hz</td>  </tr>
-<tr> <td>stereo: rectify 1024x768 GRAY</td> <td align="right">2.94 ms</td> <td align="right">340.08  Hz</td>  </tr>
-<tr> <td>stereo: rectify 1024x768->800x600 GRAY</td> <td align="right">1.78 ms</td> <td align="right">563.05  Hz</td>  </tr>
-<tr> <td>stereo: rectify 1024x768->640x480 GRAY</td> <td align="right">1.41 ms</td> <td align="right">709.17  Hz</td>  </tr>
-<tr> <td>tfest: se3_l2 [CPose3DQuat]</td> <td align="right">5.49 us</td> <td align="right">182.05 KHz</td>  </tr>
-<tr> <td>tfest: se3_l2 [vector TPoint3D]</td> <td align="right">3.06 us</td> <td align="right">327.26 KHz</td>  </tr>
-<tr> <td>tfest: se2_l2 [x10 corrs]</td> <td align="right">113.56 ns</td> <td align="right">8.81 MHz</td>  </tr>
-<tr> <td>tfest: se2_l2 [x100 corrs]</td> <td align="right">219.51 ns</td> <td align="right">4.56 MHz</td>  </tr>
-<tr> <td>tfest: se2_l2 [x1000 corrs]</td> <td align="right">1.24 us</td> <td align="right">807.92 KHz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: Harris</td> <td align="right">9.22 ms</td> <td align="right">108.46  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: KLT</td> <td align="right">9.81 ms</td> <td align="right">101.93  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: FAST</td> <td align="right">2.20 ms</td> <td align="right">455.24  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: Spin desc.</td> <td align="right">41.71 ms</td> <td align="right">23.98  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: FASTER-9</td> <td align="right">2.97 ms</td> <td align="right">337.06  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: FASTER-9 (sorted best 200)</td> <td align="right">1.47 ms</td> <td align="right">678.38  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: FASTER-10</td> <td align="right">2.03 ms</td> <td align="right">492.19  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: FASTER-10 (sorted best 200)</td> <td align="right">1.22 ms</td> <td align="right">822.43  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: FASTER-12</td> <td align="right">1.51 ms</td> <td align="right">660.97  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: FASTER-12 (sorted best 200)</td> <td align="right">1.16 ms</td> <td align="right">862.27  Hz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER9()</td> <td align="right">511.16 us</td> <td align="right">1.96 KHz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER10()</td> <td align="right">477.79 us</td> <td align="right">2.09 KHz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER12()</td> <td align="right">616.12 us</td> <td align="right">1.62 KHz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER9()+row-index</td> <td align="right">515.01 us</td> <td align="right">1.94 KHz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER10()+row-index</td> <td align="right">481.60 us</td> <td align="right">2.08 KHz</td>  </tr>
-<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER12()+row-index</td> <td align="right">619.14 us</td> <td align="right">1.62 KHz</td>  </tr>
-<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER9()</td> <td align="right">650.75 us</td> <td align="right">1.54 KHz</td>  </tr>
-<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER10()</td> <td align="right">616.57 us</td> <td align="right">1.62 KHz</td>  </tr>
-<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER12()</td> <td align="right">709.70 us</td> <td align="right">1.41 KHz</td>  </tr>
-<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER9()+row-index</td> <td align="right">657.79 us</td> <td align="right">1.52 KHz</td>  </tr>
-<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER10()+row-index</td> <td align="right">619.18 us</td> <td align="right">1.62 KHz</td>  </tr>
-<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER12()+row-index</td> <td align="right">709.86 us</td> <td align="right">1.41 KHz</td>  </tr>
-<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER9()</td> <td align="right">835.78 us</td> <td align="right">1.20 KHz</td>  </tr>
-<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER10()</td> <td align="right">836.53 us</td> <td align="right">1.20 KHz</td>  </tr>
-<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER12()</td> <td align="right">792.14 us</td> <td align="right">1.26 KHz</td>  </tr>
-<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER9()+row-index</td> <td align="right">841.33 us</td> <td align="right">1.19 KHz</td>  </tr>
-<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER10()+row-index</td> <td align="right">839.10 us</td> <td align="right">1.19 KHz</td>  </tr>
-<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER12()+row-index</td> <td align="right">791.98 us</td> <td align="right">1.26 KHz</td>  </tr>
-<tr> <td>feature_matching [640x480]: Harris + CC</td> <td align="right">21.06 ms</td> <td align="right">47.49  Hz</td>  </tr>
-<tr> <td>feature_matching [640x480]: Harris + SAD</td> <td align="right">16.55 ms</td> <td align="right">60.42  Hz</td>  </tr>
-<tr> <td>feature_matching [640x480]: FAST + CC</td> <td align="right">7.30 ms</td> <td align="right">137.04  Hz</td>  </tr>
-<tr> <td>feature_matching [640x480]: FAST + SAD</td> <td align="right">3.03 ms</td> <td align="right">330.27  Hz</td>  </tr>
-<tr> <td>graph(2d): insertEdge x 1e3</td> <td align="right">207.85 us</td> <td align="right">4.81 KHz</td>  </tr>
-<tr> <td>graph(2d,vec): insertEdge x 1e3</td> <td align="right">214.51 us</td> <td align="right">4.66 KHz</td>  </tr>
-<tr> <td>graph(2d): insertEdgeAtEnd x 1e3</td> <td align="right">187.77 us</td> <td align="right">5.33 KHz</td>  </tr>
-<tr> <td>graph(2d,vec): insertEdgeAtEnd x 1e3</td> <td align="right">184.87 us</td> <td align="right">5.41 KHz</td>  </tr>
-<tr> <td>graph(2d pdf): insertEdge x 1e3</td> <td align="right">263.60 us</td> <td align="right">3.79 KHz</td>  </tr>
-<tr> <td>graph(2d pdf,vec): insertEdge x 1e3</td> <td align="right">262.34 us</td> <td align="right">3.81 KHz</td>  </tr>
-<tr> <td>graph(2d pdf): insertEdgeAtEnd x 1e3</td> <td align="right">232.68 us</td> <td align="right">4.30 KHz</td>  </tr>
-<tr> <td>graph(2d pdf,vec): insertEdgeAtEnd x 1e3</td> <td align="right">234.07 us</td> <td align="right">4.27 KHz</td>  </tr>
-<tr> <td>graph(2d): insertEdge x 1e4</td> <td align="right">2.47 ms</td> <td align="right">404.56  Hz</td>  </tr>
-<tr> <td>graph(2d,vec): insertEdge x 1e4</td> <td align="right">2.57 ms</td> <td align="right">389.66  Hz</td>  </tr>
-<tr> <td>graph(2d): insertEdgeAtEnd x 1e4</td> <td align="right">1.87 ms</td> <td align="right">534.74  Hz</td>  </tr>
-<tr> <td>graph(2d,vec): insertEdgeAtEnd x 1e4</td> <td align="right">1.84 ms</td> <td align="right">542.42  Hz</td>  </tr>
-<tr> <td>graph(2d pdf): insertEdge x 1e4</td> <td align="right">3.20 ms</td> <td align="right">312.94  Hz</td>  </tr>
-<tr> <td>graph(2d pdf,vec): insertEdge x 1e4</td> <td align="right">3.24 ms</td> <td align="right">308.32  Hz</td>  </tr>
-<tr> <td>graph(2d pdf): insertEdgeAtEnd x 1e4</td> <td align="right">2.34 ms</td> <td align="right">427.73  Hz</td>  </tr>
-<tr> <td>graph(2d pdf,vec): insertEdgeAtEnd x 1e4</td> <td align="right">2.41 ms</td> <td align="right">414.44  Hz</td>  </tr>
-<tr> <td>graph(3d): insertEdge x 1e3</td> <td align="right">250.57 us</td> <td align="right">3.99 KHz</td>  </tr>
-<tr> <td>graph(3d,vec): insertEdge x 1e3</td> <td align="right">250.55 us</td> <td align="right">3.99 KHz</td>  </tr>
-<tr> <td>graph(3d): insertEdgeAtEnd x 1e3</td> <td align="right">217.42 us</td> <td align="right">4.60 KHz</td>  </tr>
-<tr> <td>graph(3d,vec): insertEdgeAtEnd x 1e3</td> <td align="right">215.88 us</td> <td align="right">4.63 KHz</td>  </tr>
-<tr> <td>graph(3d pdf): insertEdge x 1e3</td> <td align="right">449.90 us</td> <td align="right">2.22 KHz</td>  </tr>
-<tr> <td>graph(3d pdf,vec): insertEdge x 1e3</td> <td align="right">449.78 us</td> <td align="right">2.22 KHz</td>  </tr>
-<tr> <td>graph(3d pdf): insertEdgeAtEnd x 1e3</td> <td align="right">431.69 us</td> <td align="right">2.32 KHz</td>  </tr>
-<tr> <td>graph(3d pdf,vec): insertEdgeAtEnd x 1e3</td> <td align="right">427.11 us</td> <td align="right">2.34 KHz</td>  </tr>
-<tr> <td>graph(3d): insertEdge x 1e4</td> <td align="right">3.00 ms</td> <td align="right">333.14  Hz</td>  </tr>
-<tr> <td>graph(3d,vec): insertEdge x 1e4</td> <td align="right">2.99 ms</td> <td align="right">334.72  Hz</td>  </tr>
-<tr> <td>graph(3d): insertEdgeAtEnd x 1e4</td> <td align="right">2.17 ms</td> <td align="right">460.89  Hz</td>  </tr>
-<tr> <td>graph(3d,vec): insertEdgeAtEnd x 1e4</td> <td align="right">2.16 ms</td> <td align="right">462.23  Hz</td>  </tr>
-<tr> <td>graph(3d pdf): insertEdge x 1e4</td> <td align="right">4.99 ms</td> <td align="right">200.27  Hz</td>  </tr>
-<tr> <td>graph(3d pdf,vec): insertEdge x 1e4</td> <td align="right">5.07 ms</td> <td align="right">197.35  Hz</td>  </tr>
-<tr> <td>graph(3d pdf): insertEdgeAtEnd x 1e4</td> <td align="right">4.33 ms</td> <td align="right">230.87  Hz</td>  </tr>
-<tr> <td>graph(3d pdf,vec): insertEdgeAtEnd x 1e4</td> <td align="right">4.26 ms</td> <td align="right">234.74  Hz</td>  </tr>
-<tr> <td>graph(3d): dijkstra 1e2 nodes</td> <td align="right">95.91 us</td> <td align="right">10.43 KHz</td>  </tr>
-<tr> <td>graph(3d,vec): dijkstra 1e2 nodes</td> <td align="right">94.22 us</td> <td align="right">10.61 KHz</td>  </tr>
-<tr> <td>graph(3d): dijkstra 1e3 nodes</td> <td align="right">1.11 ms</td> <td align="right">902.95  Hz</td>  </tr>
-<tr> <td>graph(3d,vec): dijkstra 1e3 nodes</td> <td align="right">1.10 ms</td> <td align="right">907.69  Hz</td>  </tr>
-<tr> <td>graph(3d): dijkstra 1e4 nodes</td> <td align="right">15.38 ms</td> <td align="right">65.00  Hz</td>  </tr>
-<tr> <td>graph(3d,vec): dijkstra 1e4 nodes</td> <td align="right">15.65 ms</td> <td align="right">63.88  Hz</td>  </tr>
-<tr> <td>graph(3d): dijkstra 1e5 nodes</td> <td align="right">231.15 ms</td> <td align="right">4.33  Hz</td>  </tr>
-<tr> <td>graph(3d,vec): dijkstra 1e5 nodes</td> <td align="right">229.22 ms</td> <td align="right">4.36  Hz</td>  </tr>
-<tr> <td>graph(2d): dijkstra 1e5 nodes</td> <td align="right">216.00 ms</td> <td align="right">4.63  Hz</td>  </tr>
-<tr> <td>graph(2d,vec): dijkstra 1e5 nodes</td> <td align="right">222.55 ms</td> <td align="right">4.49  Hz</td>  </tr>
-<tr> <td>graphslam(2d): levmarq 50 KFs/101 edges</td> <td align="right">867.28 us</td> <td align="right">1.15 KHz</td>  </tr>
-<tr> <td>graphslam(2d): levmarq 100 KFs/451 edges</td> <td align="right">4.25 ms</td> <td align="right">235.49  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/o SSE2)</td> <td align="right">1.10 ms</td> <td align="right">907.21  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/SSE2)</td> <td align="right">1.11 ms</td> <td align="right">897.99  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/o SSE2)</td> <td align="right">1.12 ms</td> <td align="right">895.63  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/SSE2)</td> <td align="right">1.18 ms</td> <td align="right">844.46  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/o SSE2,minFilter)</td> <td align="right">2.27 ms</td> <td align="right">439.76  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/SSE2,minFilter)</td> <td align="right">2.27 ms</td> <td align="right">441.09  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/o SSE2,minFilter)</td> <td align="right">2.24 ms</td> <td align="right">446.44  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/SSE2,minFilter)</td> <td align="right">1.62 ms</td> <td align="right">618.71  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/o SSE2,maxFilter)</td> <td align="right">2.24 ms</td> <td align="right">447.14  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/SSE2,maxFilter)</td> <td align="right">2.26 ms</td> <td align="right">443.17  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/o SSE2,maxFilter)</td> <td align="right">2.20 ms</td> <td align="right">453.54  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/SSE2,maxFilter)</td> <td align="right">1.64 ms</td> <td align="right">608.83  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/o SSE2,min/maxFilter)</td> <td align="right">2.45 ms</td> <td align="right">407.64  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/SSE2,min/maxFilter)</td> <td align="right">2.45 ms</td> <td align="right">407.34  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/o SSE2,min/maxFilter)</td> <td align="right">2.49 ms</td> <td align="right">401.97  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/SSE2,min/maxFilter)</td> <td align="right">1.64 ms</td> <td align="right">609.69  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->2D scan</td> <td align="right">1.50 ms</td> <td align="right">664.81  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->2D scan + min_filter</td> <td align="right">4.28 ms</td> <td align="right">233.64  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->2D scan + max_filter</td> <td align="right">4.03 ms</td> <td align="right">247.99  Hz</td>  </tr>
-<tr> <td>3DRangeScan: 320x240 Depth->2D scan + min/max_filters</td> <td align="right">6.09 ms</td> <td align="right">164.14  Hz</td>  </tr>
-<tr> <td>CAtan2LUT: 20x20m,1cm cells,build</td> <td align="right">164.13 ms</td> <td align="right">6.09  Hz</td>  </tr>
-<tr> <td>CAtan2LUT: 20x20m,1cm cells,query</td> <td align="right">13.84 ns</td> <td align="right">72.23 MHz</td>  </tr>
-<tr> <td>CAtan2LUTMultiRes: 22x22m,build</td> <td align="right">134.50 ms</td> <td align="right">7.43  Hz</td>  </tr>
-<tr> <td>CAtan2LUTMultiRes: 22x22m,query</td> <td align="right">21.66 ns</td> <td align="right">46.18 MHz</td>  </tr>
-<tr> <td>CAtan2LUT: raw ::atan2() call</td> <td align="right">44.89 ns</td> <td align="right">22.28 MHz</td>  </tr>
-<tr> <td>Strings: mrpt::format() short str</td> <td align="right">323.60 ns</td> <td align="right">3.09 MHz</td>  </tr>
-<tr> <td>Strings: mrpt::format() long str</td> <td align="right">577.70 ns</td> <td align="right">1.73 MHz</td>  </tr>
+<tr> <td>images: Save as JPEG (640x480, quality=95%)</td> <td align="right">6.71 ms</td> <td align="right">149.14  Hz</td>  </tr>
+<tr> <td>images: Save as JPEG (800x600, quality=95%)</td> <td align="right">9.09 ms</td> <td align="right">110.00  Hz</td>  </tr>
+<tr> <td>images: Save as JPEG (1024x768, quality=95%)</td> <td align="right">14.11 ms</td> <td align="right">70.89  Hz</td>  </tr>
+<tr> <td>images: Save as JPEG (640x480, quality=75%)</td> <td align="right">4.88 ms</td> <td align="right">205.05  Hz</td>  </tr>
+<tr> <td>images: Save as JPEG (800x600, quality=75%)</td> <td align="right">7.53 ms</td> <td align="right">132.76  Hz</td>  </tr>
+<tr> <td>images: Save as JPEG (1024x768, quality=75%)</td> <td align="right">12.32 ms</td> <td align="right">81.18  Hz</td>  </tr>
+<tr> <td>images: Save BMP 800x600 disk</td> <td align="right">6.36 ms</td> <td align="right">157.29  Hz</td>  </tr>
+<tr> <td>images: Save PNG 800x600 disk</td> <td align="right">22.14 ms</td> <td align="right">45.17  Hz</td>  </tr>
+<tr> <td>images: Save JPG 800x600 disk</td> <td align="right">8.62 ms</td> <td align="right">116.07  Hz</td>  </tr>
+<tr> <td>images: Load BMP 800x600 disk</td> <td align="right">298.27 us</td> <td align="right">3.35 KHz</td>  </tr>
+<tr> <td>images: Load PNG 800x600 disk</td> <td align="right">8.93 ms</td> <td align="right">111.94  Hz</td>  </tr>
+<tr> <td>images: Load JPG 800x600 disk</td> <td align="right">6.22 ms</td> <td align="right">160.76  Hz</td>  </tr>
+<tr> <td>images: Save BMP 800x600 shared mem</td> <td align="right">417.93 us</td> <td align="right">2.39 KHz</td>  </tr>
+<tr> <td>images: Save PNG 800x600 shared mem</td> <td align="right">17.09 ms</td> <td align="right">58.52  Hz</td>  </tr>
+<tr> <td>images: Save JPG 800x600 shared mem</td> <td align="right">6.13 ms</td> <td align="right">163.16  Hz</td>  </tr>
+<tr> <td>images: Load BMP 800x600 shared mem</td> <td align="right">278.67 us</td> <td align="right">3.59 KHz</td>  </tr>
+<tr> <td>images: Load PNG 800x600 shared mem</td> <td align="right">9.01 ms</td> <td align="right">110.95  Hz</td>  </tr>
+<tr> <td>images: Load JPG 800x600 shared mem</td> <td align="right">6.22 ms</td> <td align="right">160.78  Hz</td>  </tr>
+<tr> <td>images: Gauss filter (640x480)</td> <td align="right">2.01 ms</td> <td align="right">498.17  Hz</td>  </tr>
+<tr> <td>images: Gauss filter (800x600)</td> <td align="right">3.21 ms</td> <td align="right">311.42  Hz</td>  </tr>
+<tr> <td>images: Gauss filter (1024x768)</td> <td align="right">5.27 ms</td> <td align="right">189.63  Hz</td>  </tr>
+<tr> <td>images: Half sample GRAY (160x120)</td> <td align="right">753.33 ns</td> <td align="right">1.33 MHz</td>  </tr>
+<tr> <td>images: Half sample GRAY (320x240)</td> <td align="right">1.81 us</td> <td align="right">553.51 KHz</td>  </tr>
+<tr> <td>images: Half sample GRAY (640x480)</td> <td align="right">7.24 us</td> <td align="right">138.06 KHz</td>  </tr>
+<tr> <td>images: Half sample GRAY (800x600)</td> <td align="right">12.12 us</td> <td align="right">82.53 KHz</td>  </tr>
+<tr> <td>images: Half sample GRAY (1024x768)</td> <td align="right">20.49 us</td> <td align="right">48.80 KHz</td>  </tr>
+<tr> <td>images: Half sample GRAY (1280x1024)</td> <td align="right">33.85 us</td> <td align="right">29.54 KHz</td>  </tr>
+<tr> <td>images: Half sample RGB (160x120)</td> <td align="right">1.40 us</td> <td align="right">712.59 KHz</td>  </tr>
+<tr> <td>images: Half sample RGB (320x240)</td> <td align="right">4.44 us</td> <td align="right">225.39 KHz</td>  </tr>
+<tr> <td>images: Half sample RGB (640x480)</td> <td align="right">21.84 us</td> <td align="right">45.79 KHz</td>  </tr>
+<tr> <td>images: Half sample RGB (800x600)</td> <td align="right">34.88 us</td> <td align="right">28.67 KHz</td>  </tr>
+<tr> <td>images: Half sample RGB (1024x768)</td> <td align="right">58.20 us</td> <td align="right">17.18 KHz</td>  </tr>
+<tr> <td>images: Half sample RGB (1280x1024)</td> <td align="right">119.26 us</td> <td align="right">8.38 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth GRAY (160x120)</td> <td align="right">1.08 us</td> <td align="right">923.08 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth GRAY (320x240)</td> <td align="right">3.11 us</td> <td align="right">321.54 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth GRAY (640x480)</td> <td align="right">13.89 us</td> <td align="right">72.01 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth GRAY (800x600)</td> <td align="right">21.31 us</td> <td align="right">46.92 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth GRAY (1024x768)</td> <td align="right">34.33 us</td> <td align="right">29.13 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth GRAY (1280x1024)</td> <td align="right">56.59 us</td> <td align="right">17.67 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth RGB (160x120)</td> <td align="right">10.08 us</td> <td align="right">99.21 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth RGB (320x240)</td> <td align="right">33.64 us</td> <td align="right">29.72 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth RGB (640x480)</td> <td align="right">127.81 us</td> <td align="right">7.82 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth RGB (800x600)</td> <td align="right">191.91 us</td> <td align="right">5.21 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth RGB (1024x768)</td> <td align="right">194.27 us</td> <td align="right">5.15 KHz</td>  </tr>
+<tr> <td>images: Half sample smooth RGB (1280x1024)</td> <td align="right">364.64 us</td> <td align="right">2.74 KHz</td>  </tr>
+<tr> <td>images: RGB->GRAY 8u (40x30)</td> <td align="right">5.59 us</td> <td align="right">179.00 KHz</td>  </tr>
+<tr> <td>images: RGB->GRAY 8u (80x60)</td> <td align="right">4.23 us</td> <td align="right">236.22 KHz</td>  </tr>
+<tr> <td>images: RGB->GRAY 8u (160x120)</td> <td align="right">11.42 us</td> <td align="right">87.54 KHz</td>  </tr>
+<tr> <td>images: RGB->GRAY 8u (320x240)</td> <td align="right">35.87 us</td> <td align="right">27.88 KHz</td>  </tr>
+<tr> <td>images: RGB->GRAY 8u (640x480)</td> <td align="right">127.77 us</td> <td align="right">7.83 KHz</td>  </tr>
+<tr> <td>images: RGB->GRAY 8u (800x600)</td> <td align="right">169.11 us</td> <td align="right">5.91 KHz</td>  </tr>
+<tr> <td>images: RGB->GRAY 8u (1024x768)</td> <td align="right">237.72 us</td> <td align="right">4.21 KHz</td>  </tr>
+<tr> <td>images: RGB->GRAY 8u (1280x1024)</td> <td align="right">377.32 us</td> <td align="right">2.65 KHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=2 5x5)</td> <td align="right">27.26 ns</td> <td align="right">36.68 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=3 7x7)</td> <td align="right">33.33 ns</td> <td align="right">30.00 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=4 9x9)</td> <td align="right">37.96 ns</td> <td align="right">26.34 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=5 10x10)</td> <td align="right">48.02 ns</td> <td align="right">20.83 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=6 13x13)</td> <td align="right">53.09 ns</td> <td align="right">18.84 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=7 15x15)</td> <td align="right">62.87 ns</td> <td align="right">15.91 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=8 17x17)</td> <td align="right">59.92 ns</td> <td align="right">16.69 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=9 19x19)</td> <td align="right">62.94 ns</td> <td align="right">15.89 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=10 21x21)</td> <td align="right">66.64 ns</td> <td align="right">15.01 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=11 23x23)</td> <td align="right">59.70 ns</td> <td align="right">16.75 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=12 25x25)</td> <td align="right">78.23 ns</td> <td align="right">12.78 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=13 27x27)</td> <td align="right">66.87 ns</td> <td align="right">14.95 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=14 29x29)</td> <td align="right">69.47 ns</td> <td align="right">14.39 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=15 31x31)</td> <td align="right">72.48 ns</td> <td align="right">13.80 MHz</td>  </tr>
+<tr> <td>images: KLT score (WIN=16 33x33)</td> <td align="right">103.32 ns</td> <td align="right">9.68 MHz</td>  </tr>
+<tr> <td>images: buildPyramid 640x480,4 levs,no smooth,no gray</td> <td align="right">81.37 us</td> <td align="right">12.29 KHz</td>  </tr>
+<tr> <td>images: buildPyramid 640x480,4 levs,   smooth,no gray</td> <td align="right">224.34 us</td> <td align="right">4.46 KHz</td>  </tr>
+<tr> <td>images: buildPyramid 640x480,4 levs,no smooth,   gray</td> <td align="right">94.91 us</td> <td align="right">10.54 KHz</td>  </tr>
+<tr> <td>images: buildPyramid 640x480,4 levs,   smooth,   gray</td> <td align="right">101.22 us</td> <td align="right">9.88 KHz</td>  </tr>
+<tr> <td>images: buildPyramid 640x480,8 levs,no smooth,no gray</td> <td align="right">85.80 us</td> <td align="right">11.66 KHz</td>  </tr>
+<tr> <td>images: buildPyramid 640x480,8 levs,   smooth,no gray</td> <td align="right">231.53 us</td> <td align="right">4.32 KHz</td>  </tr>
+<tr> <td>images: buildPyramid 640x480,8 levs,no smooth,   gray</td> <td align="right">99.53 us</td> <td align="right">10.05 KHz</td>  </tr>
+<tr> <td>images: buildPyramid 640x480,8 levs,   smooth,   gray</td> <td align="right">107.32 us</td> <td align="right">9.32 KHz</td>  </tr>
+<tr> <td>stereo: prepare rectify map 640x480 RGB</td> <td align="right">18.45 ms</td> <td align="right">54.21  Hz</td>  </tr>
+<tr> <td>stereo: prepare rectify map 800x600 RGB</td> <td align="right">28.81 ms</td> <td align="right">34.71  Hz</td>  </tr>
+<tr> <td>stereo: prepare rectify map 1024x768 RGB</td> <td align="right">47.34 ms</td> <td align="right">21.12  Hz</td>  </tr>
+<tr> <td>stereo: prepare rectify map 1024x768->800x600 RGB</td> <td align="right">28.79 ms</td> <td align="right">34.73  Hz</td>  </tr>
+<tr> <td>stereo: prepare rectify map 1024x768->640x480 RGB</td> <td align="right">18.49 ms</td> <td align="right">54.07  Hz</td>  </tr>
+<tr> <td>stereo: rectify 640x480 RGB</td> <td align="right">1.53 ms</td> <td align="right">651.57  Hz</td>  </tr>
+<tr> <td>stereo: rectify 800x600 RGB</td> <td align="right">1.62 ms</td> <td align="right">617.68  Hz</td>  </tr>
+<tr> <td>stereo: rectify 1024x768 RGB</td> <td align="right">2.94 ms</td> <td align="right">340.13  Hz</td>  </tr>
+<tr> <td>stereo: rectify 1024x768->800x600 RGB</td> <td align="right">2.00 ms</td> <td align="right">501.19  Hz</td>  </tr>
+<tr> <td>stereo: rectify 1024x768->640x480 RGB</td> <td align="right">1.69 ms</td> <td align="right">591.40  Hz</td>  </tr>
+<tr> <td>stereo: rectify 640x480 GRAY</td> <td align="right">1.10 ms</td> <td align="right">907.32  Hz</td>  </tr>
+<tr> <td>stereo: rectify 800x600 GRAY</td> <td align="right">1.23 ms</td> <td align="right">813.64  Hz</td>  </tr>
+<tr> <td>stereo: rectify 1024x768 GRAY</td> <td align="right">2.26 ms</td> <td align="right">441.81  Hz</td>  </tr>
+<tr> <td>stereo: rectify 1024x768->800x600 GRAY</td> <td align="right">1.38 ms</td> <td align="right">722.75  Hz</td>  </tr>
+<tr> <td>stereo: rectify 1024x768->640x480 GRAY</td> <td align="right">1.32 ms</td> <td align="right">760.11  Hz</td>  </tr>
+<tr> <td>tfest: se3_l2 [CPose3DQuat]</td> <td align="right">2.82 us</td> <td align="right">355.19 KHz</td>  </tr>
+<tr> <td>tfest: se3_l2 [vector TPoint3D]</td> <td align="right">2.86 us</td> <td align="right">349.17 KHz</td>  </tr>
+<tr> <td>tfest: se2_l2 [x10 corrs]</td> <td align="right">135.55 ns</td> <td align="right">7.38 MHz</td>  </tr>
+<tr> <td>tfest: se2_l2 [x100 corrs]</td> <td align="right">221.18 ns</td> <td align="right">4.52 MHz</td>  </tr>
+<tr> <td>tfest: se2_l2 [x1000 corrs]</td> <td align="right">1.02 us</td> <td align="right">980.87 KHz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: Harris</td> <td align="right">6.31 ms</td> <td align="right">158.55  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: KLT</td> <td align="right">6.67 ms</td> <td align="right">149.82  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: SURF</td> <td align="right">33.78 ms</td> <td align="right">29.60  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: FAST</td> <td align="right">1.90 ms</td> <td align="right">527.03  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: Spin desc.</td> <td align="right">100.39 ms</td> <td align="right">9.96  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: FASTER-9</td> <td align="right">2.31 ms</td> <td align="right">432.77  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: FASTER-9 (sorted best 200)</td> <td align="right">1.17 ms</td> <td align="right">852.33  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: FASTER-10</td> <td align="right">1.75 ms</td> <td align="right">570.61  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: FASTER-10 (sorted best 200)</td> <td align="right">974.68 us</td> <td align="right">1.03 KHz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: FASTER-12</td> <td align="right">1.29 ms</td> <td align="right">773.75  Hz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: FASTER-12 (sorted best 200)</td> <td align="right">964.98 us</td> <td align="right">1.04 KHz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER9()</td> <td align="right">397.71 us</td> <td align="right">2.51 KHz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER10()</td> <td align="right">372.97 us</td> <td align="right">2.68 KHz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER12()</td> <td align="right">476.84 us</td> <td align="right">2.10 KHz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER9()+row-index</td> <td align="right">403.19 us</td> <td align="right">2.48 KHz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER10()+row-index</td> <td align="right">376.41 us</td> <td align="right">2.66 KHz</td>  </tr>
+<tr> <td>feature_extraction [640x480]: detectFeatures_SSE2_FASTER12()+row-index</td> <td align="right">478.39 us</td> <td align="right">2.09 KHz</td>  </tr>
+<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER9()</td> <td align="right">502.18 us</td> <td align="right">1.99 KHz</td>  </tr>
+<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER10()</td> <td align="right">474.23 us</td> <td align="right">2.11 KHz</td>  </tr>
+<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER12()</td> <td align="right">548.60 us</td> <td align="right">1.82 KHz</td>  </tr>
+<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER9()+row-index</td> <td align="right">507.99 us</td> <td align="right">1.97 KHz</td>  </tr>
+<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER10()+row-index</td> <td align="right">536.86 us</td> <td align="right">1.86 KHz</td>  </tr>
+<tr> <td>feature_extraction [800x600]: detectFeatures_SSE2_FASTER12()+row-index</td> <td align="right">550.06 us</td> <td align="right">1.82 KHz</td>  </tr>
+<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER9()</td> <td align="right">646.02 us</td> <td align="right">1.55 KHz</td>  </tr>
+<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER10()</td> <td align="right">638.23 us</td> <td align="right">1.57 KHz</td>  </tr>
+<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER12()</td> <td align="right">605.17 us</td> <td align="right">1.65 KHz</td>  </tr>
+<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER9()+row-index</td> <td align="right">651.80 us</td> <td align="right">1.53 KHz</td>  </tr>
+<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER10()+row-index</td> <td align="right">640.70 us</td> <td align="right">1.56 KHz</td>  </tr>
+<tr> <td>feature_extraction [1024x768]: detectFeatures_SSE2_FASTER12()+row-index</td> <td align="right">606.24 us</td> <td align="right">1.65 KHz</td>  </tr>
+<tr> <td>feature_matching [640x480]: Harris + CC</td> <td align="right">15.55 ms</td> <td align="right">64.30  Hz</td>  </tr>
+<tr> <td>feature_matching [640x480]: Harris + SAD</td> <td align="right">11.05 ms</td> <td align="right">90.49  Hz</td>  </tr>
+<tr> <td>feature_matching [640x480]: SURF</td> <td align="right">62.55 ms</td> <td align="right">15.99  Hz</td>  </tr>
+<tr> <td>feature_matching [640x480]: FAST + CC</td> <td align="right">7.00 ms</td> <td align="right">142.92  Hz</td>  </tr>
+<tr> <td>feature_matching [640x480]: FAST + SAD</td> <td align="right">2.47 ms</td> <td align="right">405.04  Hz</td>  </tr>
+<tr> <td>graph(2d): insertEdge x 1e3</td> <td align="right">93.49 us</td> <td align="right">10.70 KHz</td>  </tr>
+<tr> <td>graph(2d,vec): insertEdge x 1e3</td> <td align="right">97.39 us</td> <td align="right">10.27 KHz</td>  </tr>
+<tr> <td>graph(2d): insertEdgeAtEnd x 1e3</td> <td align="right">73.49 us</td> <td align="right">13.61 KHz</td>  </tr>
+<tr> <td>graph(2d,vec): insertEdgeAtEnd x 1e3</td> <td align="right">74.27 us</td> <td align="right">13.46 KHz</td>  </tr>
+<tr> <td>graph(2d pdf): insertEdge x 1e3</td> <td align="right">130.24 us</td> <td align="right">7.68 KHz</td>  </tr>
+<tr> <td>graph(2d pdf,vec): insertEdge x 1e3</td> <td align="right">130.03 us</td> <td align="right">7.69 KHz</td>  </tr>
+<tr> <td>graph(2d pdf): insertEdgeAtEnd x 1e3</td> <td align="right">113.28 us</td> <td align="right">8.83 KHz</td>  </tr>
+<tr> <td>graph(2d pdf,vec): insertEdgeAtEnd x 1e3</td> <td align="right">113.96 us</td> <td align="right">8.77 KHz</td>  </tr>
+<tr> <td>graph(2d): insertEdge x 1e4</td> <td align="right">1.52 ms</td> <td align="right">656.10  Hz</td>  </tr>
+<tr> <td>graph(2d,vec): insertEdge x 1e4</td> <td align="right">1.25 ms</td> <td align="right">799.05  Hz</td>  </tr>
+<tr> <td>graph(2d): insertEdgeAtEnd x 1e4</td> <td align="right">488.95 us</td> <td align="right">2.05 KHz</td>  </tr>
+<tr> <td>graph(2d,vec): insertEdgeAtEnd x 1e4</td> <td align="right">490.97 us</td> <td align="right">2.04 KHz</td>  </tr>
+<tr> <td>graph(2d pdf): insertEdge x 1e4</td> <td align="right">1.29 ms</td> <td align="right">772.59  Hz</td>  </tr>
+<tr> <td>graph(2d pdf,vec): insertEdge x 1e4</td> <td align="right">1.73 ms</td> <td align="right">577.69  Hz</td>  </tr>
+<tr> <td>graph(2d pdf): insertEdgeAtEnd x 1e4</td> <td align="right">1.11 ms</td> <td align="right">904.94  Hz</td>  </tr>
+<tr> <td>graph(2d pdf,vec): insertEdgeAtEnd x 1e4</td> <td align="right">1.11 ms</td> <td align="right">901.73  Hz</td>  </tr>
+<tr> <td>graph(3d): insertEdge x 1e3</td> <td align="right">123.67 us</td> <td align="right">8.09 KHz</td>  </tr>
+<tr> <td>graph(3d,vec): insertEdge x 1e3</td> <td align="right">125.66 us</td> <td align="right">7.96 KHz</td>  </tr>
+<tr> <td>graph(3d): insertEdgeAtEnd x 1e3</td> <td align="right">103.65 us</td> <td align="right">9.65 KHz</td>  </tr>
+<tr> <td>graph(3d,vec): insertEdgeAtEnd x 1e3</td> <td align="right">103.36 us</td> <td align="right">9.67 KHz</td>  </tr>
+<tr> <td>graph(3d pdf): insertEdge x 1e3</td> <td align="right">293.13 us</td> <td align="right">3.41 KHz</td>  </tr>
+<tr> <td>graph(3d pdf,vec): insertEdge x 1e3</td> <td align="right">290.78 us</td> <td align="right">3.44 KHz</td>  </tr>
+<tr> <td>graph(3d pdf): insertEdgeAtEnd x 1e3</td> <td align="right">247.59 us</td> <td align="right">4.04 KHz</td>  </tr>
+<tr> <td>graph(3d pdf,vec): insertEdgeAtEnd x 1e3</td> <td align="right">247.19 us</td> <td align="right">4.05 KHz</td>  </tr>
+<tr> <td>graph(3d): insertEdge x 1e4</td> <td align="right">1.53 ms</td> <td align="right">654.63  Hz</td>  </tr>
+<tr> <td>graph(3d,vec): insertEdge x 1e4</td> <td align="right">1.52 ms</td> <td align="right">659.36  Hz</td>  </tr>
+<tr> <td>graph(3d): insertEdgeAtEnd x 1e4</td> <td align="right">1.03 ms</td> <td align="right">974.27  Hz</td>  </tr>
+<tr> <td>graph(3d,vec): insertEdgeAtEnd x 1e4</td> <td align="right">1.04 ms</td> <td align="right">964.55  Hz</td>  </tr>
+<tr> <td>graph(3d pdf): insertEdge x 1e4</td> <td align="right">3.71 ms</td> <td align="right">269.73  Hz</td>  </tr>
+<tr> <td>graph(3d pdf,vec): insertEdge x 1e4</td> <td align="right">3.71 ms</td> <td align="right">269.81  Hz</td>  </tr>
+<tr> <td>graph(3d pdf): insertEdgeAtEnd x 1e4</td> <td align="right">2.49 ms</td> <td align="right">401.60  Hz</td>  </tr>
+<tr> <td>graph(3d pdf,vec): insertEdgeAtEnd x 1e4</td> <td align="right">2.48 ms</td> <td align="right">402.64  Hz</td>  </tr>
+<tr> <td>graph(3d): dijkstra 1e2 nodes</td> <td align="right">52.34 us</td> <td align="right">19.11 KHz</td>  </tr>
+<tr> <td>graph(3d,vec): dijkstra 1e2 nodes</td> <td align="right">50.77 us</td> <td align="right">19.70 KHz</td>  </tr>
+<tr> <td>graph(3d): dijkstra 1e3 nodes</td> <td align="right">747.15 us</td> <td align="right">1.34 KHz</td>  </tr>
+<tr> <td>graph(3d,vec): dijkstra 1e3 nodes</td> <td align="right">730.57 us</td> <td align="right">1.37 KHz</td>  </tr>
+<tr> <td>graph(3d): dijkstra 1e4 nodes</td> <td align="right">10.64 ms</td> <td align="right">94.00  Hz</td>  </tr>
+<tr> <td>graph(3d,vec): dijkstra 1e4 nodes</td> <td align="right">10.80 ms</td> <td align="right">92.60  Hz</td>  </tr>
+<tr> <td>graph(3d): dijkstra 1e5 nodes</td> <td align="right">167.96 ms</td> <td align="right">5.95  Hz</td>  </tr>
+<tr> <td>graph(3d,vec): dijkstra 1e5 nodes</td> <td align="right">169.81 ms</td> <td align="right">5.89  Hz</td>  </tr>
+<tr> <td>graph(2d): dijkstra 1e5 nodes</td> <td align="right">173.28 ms</td> <td align="right">5.77  Hz</td>  </tr>
+<tr> <td>graph(2d,vec): dijkstra 1e5 nodes</td> <td align="right">172.89 ms</td> <td align="right">5.78  Hz</td>  </tr>
+<tr> <td>graphslam(2d): levmarq 50 KFs/101 edges</td> <td align="right">620.26 us</td> <td align="right">1.61 KHz</td>  </tr>
+<tr> <td>graphslam(2d): levmarq 100 KFs/451 edges</td> <td align="right">3.22 ms</td> <td align="right">310.90  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/o SSE2)</td> <td align="right">1.09 ms</td> <td align="right">918.40  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/SSE2)</td> <td align="right">1.02 ms</td> <td align="right">978.06  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/o SSE2)</td> <td align="right">909.15 us</td> <td align="right">1.10 KHz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/SSE2)</td> <td align="right">970.51 us</td> <td align="right">1.03 KHz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/o SSE2,minFilter)</td> <td align="right">1.97 ms</td> <td align="right">507.74  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/SSE2,minFilter)</td> <td align="right">1.96 ms</td> <td align="right">509.63  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/o SSE2,minFilter)</td> <td align="right">1.86 ms</td> <td align="right">536.55  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/SSE2,minFilter)</td> <td align="right">1.32 ms</td> <td align="right">756.64  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/o SSE2,maxFilter)</td> <td align="right">1.94 ms</td> <td align="right">514.60  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/SSE2,maxFilter)</td> <td align="right">1.95 ms</td> <td align="right">512.03  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/o SSE2,maxFilter)</td> <td align="right">1.88 ms</td> <td align="right">533.31  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/SSE2,maxFilter)</td> <td align="right">1.43 ms</td> <td align="right">698.03  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/o SSE2,min/maxFilter)</td> <td align="right">2.05 ms</td> <td align="right">488.53  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (no LUT,w/SSE2,min/maxFilter)</td> <td align="right">2.04 ms</td> <td align="right">490.40  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/o SSE2,min/maxFilter)</td> <td align="right">2.06 ms</td> <td align="right">486.06  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->3D (LUT,w/SSE2,min/maxFilter)</td> <td align="right">1.47 ms</td> <td align="right">681.79  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->2D scan</td> <td align="right">1.25 ms</td> <td align="right">801.03  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->2D scan + min_filter</td> <td align="right">3.34 ms</td> <td align="right">299.37  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->2D scan + max_filter</td> <td align="right">3.35 ms</td> <td align="right">298.08  Hz</td>  </tr>
+<tr> <td>3DRangeScan: 320x240 Depth->2D scan + min/max_filters</td> <td align="right">5.16 ms</td> <td align="right">193.80  Hz</td>  </tr>
+<tr> <td>CAtan2LUT: 20x20m,1cm cells,build</td> <td align="right">360.93 ms</td> <td align="right">2.77  Hz</td>  </tr>
+<tr> <td>CAtan2LUT: 20x20m,1cm cells,query</td> <td align="right">7.31 ns</td> <td align="right">136.72 MHz</td>  </tr>
+<tr> <td>CAtan2LUTMultiRes: 22x22m,build</td> <td align="right">292.04 ms</td> <td align="right">3.42  Hz</td>  </tr>
+<tr> <td>CAtan2LUTMultiRes: 22x22m,query</td> <td align="right">19.01 ns</td> <td align="right">52.61 MHz</td>  </tr>
+<tr> <td>CAtan2LUT: raw ::atan2() call</td> <td align="right">94.61 ns</td> <td align="right">10.57 MHz</td>  </tr>
+<tr> <td>Strings: mrpt::format() short str</td> <td align="right">194.60 ns</td> <td align="right">5.14 MHz</td>  </tr>
+<tr> <td>Strings: mrpt::format() long str</td> <td align="right">354.10 ns</td> <td align="right">2.82 MHz</td>  </tr>
 </table></div>
 <p> &nbsp; </p>
-<hr><small>Page generated automatically at 2018/10/12,06:34:17.582085 with MRPT 1.9.9 by 'mrpt-performance'.</small>
+<hr><small>Page generated automatically at 2018/10/29,14:04:22.979430 with MRPT 1.9.9 by 'mrpt-performance'.</small>
 </body></html>
